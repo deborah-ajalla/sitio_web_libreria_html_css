@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frameset</title>
+</head>
+
+<!---------- ACLARACION ---------->
+<!-- Esta página conecta con el resto de los archivos HTML.
+     Todas conectan con el menú principal
+     Pero hacer que el menú principal se superponga me llevaría a duplicar las páginas 
+     de modo de UNICAMENTE utilizar el menu del frameset... y no me convence-->
+
+<!---------- FRAMESET ---------->
+<frameset rows="50, *" border= "0">
+	<!-------- MENÚ ---------->
+	<frame noresize="0" src="5-ubicacion.html" name="encabezado"></frame>
+	<!-------- BODY ---------->
+	<frameset cols="100%">
+		<frame noresize="0" src="7-ubicacion-frame.html" name="body"></frame>
+	</frameset>
+<frameset rows="80, *" border= "0">
+
+
+<body>
+    
+</body>
+</html>

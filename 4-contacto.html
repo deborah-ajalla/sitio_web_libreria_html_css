@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+     <!------- ESTILOS CSS -------->
+     <style>
+        *{
+             margin: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             padding: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             box-sizing: border-box;  /*para que no se desborde el contenido de las cajas*/
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu{
+             background-color: #eb9ac0; /*color  principal elegido- se adjunta en carpeta la paleta de colores utilizada*/
+             height: 4em;    
+             padding-top: 15px;     
+        }
+
+        .menu ul{    /*aplico estilo a todos los elementos ul que se encuentran dentro de la clase menu*/
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;  
+             list-style: none; /*le saco las viñetas que trae por defecto*/
+        }
+
+        li a{ /*aplico estilo a todos los elementos a que se encuentran dentro del elemento li*/
+             text-decoration: none;   /*le saco el subrayado que trae por defecto*/
+             color: white;
+             font-size: 18px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            color: #ce3989;
+        }
+
+        form{
+            width: 70%;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fdeaf2;
+        }
+
+        form legend{
+            color: #ce3989;
+            font-size: 27px;
+            text-align: center;
+
+        }
+        form div{
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form label{
+            color: #ce3989;
+            font-size: 22px;
+            padding-left: 12%;
+            line-height: 2;
+        }
+        .label_select{
+            padding-left: 1%;
+
+        }
+        .label_mensaje{
+            padding-left: 24%;
+        }
+
+        form input {
+            width: 350px;
+            height: 30px;
+            margin: 3%;
+            border-radius: 10px;
+        }
+        form textarea{
+            margin-left: 12%;
+            width: 75%;
+            resize: none;
+            color: #ce3989;
+            font-size: 17px;
+        }
+
+        .botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .boton{
+            background-color: #ce3989;
+            color: white;
+            width: 200px;
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        footer{
+             height: 6em;   
+             background-color: #eb9ac0; 
+             color: white;
+             text-align: center;
+             margin-top:50px;
+             padding: 30px; 
+        }
+     </style>
+
+
+</head>
+<body>
+     <!------- MENÚ -------->
+     <header>
+        <nav class="menu">
+            <ul>
+                 <li><a href="1-index.html">Inicio</a></li>
+                 <li><a href="2-catalogo.html">Catálogo</a></li>
+                 <li><a href="3-eventos.html">Eventos</a></li>
+                 <li><a href="5-ubicacion.html">Ubicación</a></li>
+                 <li><a href="#">Contacto</a></li>          
+            </ul>
+        </nav>
+   </header>
+
+    <!------- PRINCIPAL -------->
+    <H1> Formulario de Contacto</H1>
+    <section id="principal">
+        <form action="">
+            <fieldset> <!--hace un recuadro al formulario-->
+                <legend> Datos Personales </legend>
+                <div>
+                     <label for="nombre"> Nombre:</label>
+                     <input type="text" name="nombre" id="nombre" required>
+                </div>
+
+                <div>
+                     <label for="apellido">Apellido: </label>
+                     <input type="text" name="apellido" id="apellido" required> <br>
+                </div>
+
+                <div>
+                     <label for="telefono">Teléfono: </label>
+                     <input type="tel" name="telefono" id="telefono" required>
+                </div>
+
+                <div>
+                     <label for="email">Email: </label>
+                     <input type="email" name="email" id="email" required> <br>
+                </div>             
+                
+                <div>
+                     <label class="label_select" for="motivo">Indique el motivo de su consulta:  </label>
+                     <select name="estudios" id="estudios">
+                         <option value="uno">Consulta</option>
+                         <option value="dos">Presupuesto</option>
+                         <option value="tres">Asesoramiento</option>
+                         <option value="cuatro">Orientación</option>
+                         <option value="cinco">Otro</option>
+                     </select> <br>
+                </div>
+
+                <label  class="label_mensaje" for="mensaje"> Ingrese su mensaje: </label> <br>
+                <textarea name="mensaje" id="mensaje" rows="13" cols="40"></textarea>                
+
+                 <div class="botones">
+                     <input class="boton" type="submit" value="Enviar">
+                     <input class="boton" type="reset" value="Borrar">
+                 </div>               
+            </fieldset>               
+        </form>
+    </section>
+
+    <!------- FOOTER -------->
+    <footer>
+         <p>
+             &copy; 2024 |<b> <i>L' Essentiel </i> </b>  Libros Románticos Atemporales|  &copy; 2024 <br>
+             ▪Página Realizada por Deborah Ajalla▪ <br>    
+        </p>
+    </footer>
+    
+</body>
+</html>

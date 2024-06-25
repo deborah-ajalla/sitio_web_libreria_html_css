@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos </title>
+
+    <!------- ESTILOS CSS -------->
+    <style>
+         *{
+             margin: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             padding: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             box-sizing: border-box;  /*para que no se desborde el contenido de las cajas*/
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu{
+             background-color: #eb9ac0; /*color  principal elegido- se adjunta en carpeta la paleta de colores utilizada*/
+             height: 4em;    
+             padding-top: 15px;     
+        }
+
+        .menu ul{    /*aplico estilo a todos los elementos ul que se encuentran dentro de la clase menu*/
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;  
+             list-style: none; /*le saco las viñetas que trae por defecto*/
+        }
+
+        li a{ /*aplico estilo a todos los elementos a que se encuentran dentro del elemento li*/
+             text-decoration: none;   /*le saco el subrayado que trae por defecto*/
+             color: white;
+             font-size: 18px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+            color: #ce3989;
+        }
+
+        .principal{
+            min-width: 80%;
+        }
+
+        .contenedor{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 50px;
+        }
+
+     
+        .contenedor_imagen img{
+            width: 350px;  
+        }
+
+        .contenedor_eventos{
+            text-align: center;
+            line-height: 2;
+            color: #eb9ac0;
+        }
+
+        .contenedor_eventos ul{
+            list-style: none;
+        }
+
+        .contenedor_eventos div{
+            padding: 10px;
+        }
+
+        .contenedor_eventos hr{
+            margin: 0 auto;
+            width: 360px;
+        }
+
+        footer{
+             height: 6em;   
+             background-color: #eb9ac0; 
+             color: white;
+             text-align: center;
+             margin-top:50px;
+             padding: 30px; 
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!------- MENÚ -------->
+    <header>
+        <nav class="menu">
+            <ul>
+                 <li><a href="1-index.html">Inicio</a></li>
+                 <li><a href="2-catalogo.html">Catálogo</a></li>
+                 <li><a href="#">Eventos</a></li>
+                 <li><a href="5-ubicacion.html">Ubicación</a></li>
+                 <li><a href="4-contacto.html">Contacto</a></li>          
+            </ul>
+        </nav>
+   </header>
+
+   <!------- PRINCIPAL -------->
+   <main>
+    <section class="principal">
+         <h1> Nuestros Próximos Eventos</h1>
+         <div class="contenedor">
+             <div class="contenedor_imagen">
+                 <img src="./images/imagen_eventos.jpg" alt="">
+             </div>
+
+             <div class="contenedor_eventos">
+                 <div>
+                         <h2>Taller De Escritura.</h2>
+                         <ul>
+                             <li>Dia: Viernes 24 de mayo de 2024</li>
+                             <li>Horario: 18 hs.</li>
+                             <li> <i>Expositor: </i> Marcela Trejo</li>
+                         </ul>
+                         <hr>
+                 </div>
+                 <div>
+                         <h2>Taller de Poesia Narrativa.</h2>
+                         <ul>
+                             <li>Dia: Sábado 01 de junio de 2024.</li>
+                             <li>Horario: 13 hs.</li>
+                             <li> <i>Expositor: </i> Juan Cardozo.  </li>
+                         </ul>
+                         <hr>
+                 </div>
+                 <div>
+                         <h2>Taller Interpretación y Lectura <br>de Clasicos de la Literatura Romántica.</h2>
+                         <ul>
+                             <li>Dia: Sábado 13 de julio de 2024.</li>
+                             <li>Horario: 17 hs.</li>
+                             <li> <i>Expositor: </i> Deborah Ajalla</li>
+                         </ul>
+                 </div>
+             </div>
+         </div>
+    </section>
+   </main>
+
+    <!------- FOOTER -------->
+    <footer>
+        <p>
+             &copy; 2024 |<b> <i>L' Essentiel </i> </b>  Libros Románticos Atemporales|  &copy; 2024 <br>
+             ▪Página Realizada por Deborah Ajalla▪ <br>    
+        </p>
+    </footer>
+       
+
+
+    
+</body>
+</html>

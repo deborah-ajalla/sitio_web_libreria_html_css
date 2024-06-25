@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo L'Essentiel</title>
+
+    <!------- ESTILOS CSS -------->
+    <style>
+         *{
+             margin: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             padding: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+             box-sizing: border-box;  /*para que no se desborde el contenido de las cajas*/
+             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu{
+             background-color: #eb9ac0; /*color  principal elegido- se adjunta en carpeta la paleta de colores utilizada*/
+             height: 4em;    
+             padding-top: 15px;
+              
+        }
+
+        .menu ul{    /*aplico estilo a todos los elementos ul que se encuentran dentro de la clase menu*/
+             display: flex;
+             justify-content: space-evenly;
+             align-items: center;  
+             list-style: none; /*le saco las viñetas que trae por defecto*/
+        }
+
+        li a{ /*aplico estilo a todos los elementos a que se encuentran dentro del elemento li*/
+             text-decoration: none;   /*le saco el subrayado que trae por defecto*/
+             color: white;
+             font-size: 18px;
+        }
+
+        .principal{
+             min-width: 80%;
+             text-align: center;
+             padding: 60px 0px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 20px;
+            color: #ce3989;
+        }
+        .ilustracion div{
+            text-align: center;
+            margin: 30px;
+        }
+
+        .ilustracion img{
+            width: 600px;
+        }
+
+        table{
+            width: 850px;
+            margin: 0 auto;
+            border: 5px #f3aacb;
+            padding: 50px;
+        }
+
+        th{
+            font-size: 30px;
+            background-color:#ce3989 ;
+            color: white;
+            padding-bottom: 10px;
+          
+        }
+        tr, td{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #f3aacb;
+        }
+
+        td{
+            font-size: 19px;
+        }
+
+        .imagen_tabla{
+            width: 120px;
+        }
+
+        footer{
+             height: 6em;   
+             background-color: #eb9ac0; 
+             color: white;
+             text-align: center;
+             margin-top:50px;
+             padding: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+     <!------- MENÚ -------->
+     <header>
+         <nav class="menu">
+             <ul>
+                 <li><a href="1-index.html">Inicio</a></li>
+                 <li><a href="#">Catálogo</a></li>
+                 <li><a href="3-eventos.html">Eventos</a></li>
+                 <li><a href="5-ubicacion.html">Ubicación</a></li>
+                 <li><a href="4-contacto.html">Contacto</a></li>          
+             </ul>
+         </nav>
+    </header>
+
+    <!------- CONTENIDO SUPERIOR -------->
+    <section class="ilustracion">
+         <h1> Nuestro Catálogo</h1>
+         <div>
+             <img src="./images/imagen_catalogo_uno.jpg" alt="lectura_romance_novela">
+        </div>
+    </section>
+
+     <!------- TABLA PRINCIPAL -------->
+     <table>
+        <tr>
+             <th> Portada </th>
+             <th> Titulo </th>
+             <th> Autor </th>
+             <th> Código</th>
+        </tr>
+        <tr> 
+             <td>
+                 <img class="imagen_tabla" src="./images/1-pedro_saborido_una_historia_del_amor.webp" alt="imagen_libro">
+             </td>
+             <td> "Una historia del Amor" </td>
+             <td> Pedro Saborido</td>
+             <td> LM-02365</td>
+        </tr>
+        <tr>
+             <td>
+                 <img class="imagen_tabla" src="./images/2-uri_levine_enamorate_del_problema_no_De_la_solucion_.webp" alt="imagen_libro">
+             </td>
+             <td> "Enamórate del Problema, No de la Solución" </td>
+             <td> Uri Levine</td>
+             <td> LM-02378</td>
+        </tr>
+        <tr>
+            <td>
+                <img class="imagen_tabla" src="./images/3-lucy_score_el_amor_pende_de_un_hilo.webp" alt="imagen_libro">
+            </td>
+             <td> "El amor pende de un hilo" </td>
+             <td> Lucy Score</td>
+             <td> LM-02365</td>
+       </tr>
+       <tr>
+             <td>
+                 <img class="imagen_tabla" src="./images/4-maria_martinez_lo_que_la_nieve_susurra_al_caer.webp" alt="imagen_libro">
+             </td>
+             <td> "Lo que la nieve susurra a caer" </td>
+             <td> María Martínez</td>
+             <td> LM-02795</td>
+       </tr>
+       <tr>
+            <td>
+                 <img class="imagen_tabla" src="./images/5-rosario_oyanarte_lo_nuestro_fue_real.webp" alt="imagen_libro">
+            </td>
+             <td>"Lo nuestro fue real"</td>
+             <td>Rosario Oyhanarte</td>
+             <td> LM-02925</td>
+       </tr>
+       <tr>
+             <td>
+                <img class="imagen_tabla" src="./images/6-fernanda_perez_una_mujer_con_alas.webp" alt="imagen_libro">
+             </td>
+             <td>"Una mujer con alas"</td>
+             <td>Fernanda Pérez</td>
+             <td> LM-02015</td>
+       </tr>
+       <tr>
+             <td>
+                 <img class="imagen_tabla" src="./images/7-florencia_bonelli_lo_que_dicen_tus_ojos.webp" alt="imagen_libro">
+             </td>
+             <td>"Lo que dicen tus ojos"</td>
+             <td>Florencia Bonelli</td>
+             <td> LM-01565</td>
+       </tr>
+       <tr>
+             <td>
+                 <img class="imagen_tabla" src="./images/8-jimena_sabadu_la_conquista_de_tinder.webp" alt="imagen_libro">
+             </td>
+             <td>"La conquista de Tinder"</td>
+             <td>Jimena Sabadu</td>
+             <td> LM-00865</td>
+       </tr>
+       <tr>
+             <td>
+                 <img class="imagen_tabla" src="./images/9-elisabet_benavent_los_abrazos_lentos.webp" alt="imagen_libro">
+             </td>
+             <td>"Los abrazos lentos"</td>
+             <td>Elisabet Benavent</td>
+             <td> LM-01465</td>
+       </tr>
+     </table>
+
+     <!------- FOOTER -------->
+    <footer>
+       
+         <p>
+             &copy; 2024 |<b> <i>L' Essentiel </i> </b>  Libros Románticos Atemporales|  &copy; 2024 <br>
+             ▪Página Realizada por Deborah Ajalla▪ <br>
+             
+         </p>
+    </footer>
+    
+</body>
+</html>

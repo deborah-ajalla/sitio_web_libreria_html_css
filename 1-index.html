@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Essentiel -Sitio Oficial-</title>
+
+
+    <!--//////////////////////////////////////////////////////////////
+         EL PRESENTE ES UN TRABAJO REALIZADO PARA SU EVALUACIÓN COMO PRIMER PARCIAL
+         DE LA MATERIA PROGRAMACION III
+         ACLARACIONES:
+                      1) SE AGREGAN ESTILOS EN ETIQUETA STYLE AL INICIO DEL DOCUMENTO
+                      2) SE UTILIZA UN IFRAME EN LA HOJA UBICACION.HTML
+                      3) EL CARPETA IMAGES SE ADJUNTAN TODAS LAS IMAGENES QUE SE UTILIZAN EN EL PRESENTE TRABAJO. 
+                     
+        //////////////////////////////////////////////////////////////-->
+
+    <!------- ESTILOS CSS -------->
+    <style>
+
+        *{
+            margin: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+            padding: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+            box-sizing: border-box;  /*para que no se desborde el contenido de las cajas*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu{
+            background-color: #eb9ac0; /*color  principal elegido- se adjunta en carpeta la paleta de colores utilizada*/
+            height: 4em;    
+            padding-top: 15px;
+              
+        }
+
+        .menu ul{    /*aplico estilo a todos los elementos ul que se encuentran dentro de la clase menu*/
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;  
+            list-style: none; /*le saco las viñetas que trae por defecto*/
+        }
+
+        li a{ /*aplico estilo a todos los elementos a que se encuentran dentro del elemento li*/
+            text-decoration: none;   /*le saco el subrayado que trae por defecto*/
+            color: white;
+            font-size: 18px;
+        }
+
+        .principal{
+            min-width: 80%;
+            text-align: center;
+            padding: 60px 0px;
+        }
+
+        h1{
+            font-size: 3em;
+            padding-bottom: 60px;
+            color: #ce3989;
+        }
+
+        #nuestro_espacio{
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 40px 0px;
+            min-width: 70%;
+            color: #ce3989
+        }
+
+        .inferior div{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+           
+        }
+        .inferior img{
+            width: 300px;
+            padding: 0px 30px;
+        }
+      
+        footer{
+            height: 6em;   
+            background-color: #eb9ac0; 
+            color: white;
+            text-align: center;
+            margin-top:50px;
+            padding: 30px; 
+           
+        }
+      
+    </style>
+
+</head>
+<body>
+    <!------- MENÚ -------->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#nuestro_espacio">Nuestro espacio</a></li>
+                <li><a href="2-catalogo.html">Catálogo</a></li>
+                <li><a href="3-eventos.html">Eventos</a></li>
+                <li><a href="5-ubicacion.html">Ubicación</a></li>
+                <li><a href="4-contacto.html">Contacto</a></li>          
+            </ul>
+        </nav>
+    </header>
+
+     <!------- PRINCIPAL -------->
+    <main class="container">
+        <section class="principal">
+             <h1> <em> L' Essentiel</em> <br>  Libros Románticos Atemporales...</h1>
+             <img id="img" src="./images/principal.jpg" alt="logo_libreria_romance">
+            
+             <p id="nuestro_espacio">
+                 Este espacio está creado para todos los amantes de las novelas románticas. <br>
+                 Si estás buscando algún libro que te permita sumergirte en una historia de amor épica... llegaste al lugar indicado. <br>
+                 Si buscás inspiración para poder conquistar a esa persona que te tiene perdidamente enamorad@... estás en el lugar correcto. <br>
+                 Te ofrecemos un amplio catálogo con las obras más conocidas y los clásicos infaltables. <br>
+                 Te asesoramos para que encuentres esa novela que te va a llenar de suspiros y va a hacer que vuelvas siempre a buscar otra...
+             </p>
+        </section>       
+    </main>
+
+     <!------- IMAGENES INFERIORES -------->
+    <section class="inferior">
+        <div>
+            <img  class="imagen_inferior" src="./images/inferior_4.jpg" alt="sala_lectura">
+            <img  class="imagen_inferior" src="./images/inferior_1.jpg" alt="libro_romanticismo">
+            <img  class="imagen_inferior" src="./images/inferior_2.jpg" alt="leer_romantico">
+        </div>  
+    </section>
+
+     <!------- FOOTER -------->
+    <footer>
+       
+        <p>
+            &copy; 2024 |<b> <i>L' Essentiel </i> </b>  Libros Románticos Atemporales|  &copy; 2024 <br>
+            ▪Página Realizada por Deborah Ajalla▪ <br>        
+        </p>
+    </footer>
+</body>
+</html>

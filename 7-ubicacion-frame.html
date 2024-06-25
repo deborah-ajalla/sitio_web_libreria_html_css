@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicacion Frame</title>
+
+<!------- ESTILOS CSS -------->
+<style>
+    *{
+         margin: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+         padding: 0; /*reseteo los márgenes para que mi contenido quede pegado al borde del viewport */
+         box-sizing: border-box;  /*para que no se desborde el contenido de las cajas*/
+         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    h1{
+         text-align: center;
+         font-size: 40px;
+         margin-top: 20px;
+         margin-bottom: 60px;
+         color: #ce3989;
+     }
+
+     .contenedor{
+        display: flex;
+        justify-content: center;
+        color: #ce3989;
+        font-size: 19px;
+     }
+     h3{
+        text-align: center;
+        padding-top: 30px;
+     }
+     p{
+        padding: 15px;
+        text-align: center;
+        line-height: 2;
+     }
+
+     iframe{
+         margin-left: 20%;
+        }
+
+     footer{
+         height: 6em;   
+         background-color: #eb9ac0; 
+         color: white;
+         text-align: center;
+         margin-top:50px;
+         bottom: 0;          
+     }
+
+</style>
+
+</head>
+<body>
+    <h1> Nuestra Ubicacion</h1>
+
+    <div class="contenedor">
+
+        <div class="conenido_texto">
+            <h3>Dirección: </h3>
+            <p> Avenida Luro 4415. Gregorio de Laferrere. <br>Provincia de Buenos Aires</p>
+            <h3> Teléfono:</h3>
+            <p> 1530495749</p>
+            <h3>Mail:</h3>
+            <p>consultas_essentiel@gmail.com</p>
+        </div>
+        <div class="contenido_mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.760805436566!2d-58.60558112583254!3d-34.73642316451601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc434890d66cf%3A0xed7d0074714682d!2sAv.%20Luro%204415%2C%20B1757AQA%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1716425754304!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+         
+
+    </div> 
+
+    <!------- FOOTER -------->
+    <footer>
+        
+       <p>
+           &copy; 2024 |<b> <i>L' Essentiel </i> </b>  Libros Románticos Atemporales|  &copy; 2024 <br>
+           ▪Página Realizada por Deborah Ajalla▪ <br>    
+      </p>
+  </footer>
+    
+</body>
+</html>
